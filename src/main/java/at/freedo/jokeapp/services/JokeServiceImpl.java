@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class JokeServiceImpl implements JokeService {
 
+    @Override
     public String generateJoke(){
         ChuckNorrisQuotes joke = new ChuckNorrisQuotes();
         return joke.getRandomQuote();
